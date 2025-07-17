@@ -1,4 +1,7 @@
-One of the dataset named AIDS classification has been uploaded by accident,kindly ignore it.
-Datset used is the Netflix Titles dataset obtained from Kaggle.
-The SQL query code along with the screenshots of the outputs ahve been included in the attached zip file.
-I have used MySQL Workbench for the execution of the Queries.
+# SQL queries to extract and analyze data from a database
+
+The dataset used is the 'Netflix Titles' dataset obtained from Kaggle.
+
+I have used MySQL Workbench for the execution of the following queries, for the extraction and analysis of the dataset.
+
+SELECT, WHERE, ORDER BY, GROUP BY, JOINS (INNER, LEFT, RIGHT), Subqueries, SUM, AVG
