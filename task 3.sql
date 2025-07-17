@@ -1,0 +1,11 @@
+DESCRIBE test.netflix;
+SELECT * FROM test.netflix;
+SELECT * FROM test.netflix WHERE release_year="2014";
+SELECT * FROM test.netflix ORDER BY show_id DESC;
+SELECT title, director, country FROM test.netflix GROUP BY country;
+SELECT sub.* FROM (SELECT * FROM test.netflix WHERE release_year="2020") sub WHERE sub.type = 'Movie';
+SELECT SUM(release_year) FROM test.netflix WHERE release_year="2020";
+SELECT avg(release_year) FROM test.netflix WHERE release_year="2020";
+CREATE VIEW filmof_2021 AS SELECT director, title FROM test.netflix WHERE release_year='2021';
+SELECT * FROM filmof_2021;
+CREATE INDEX Directors ON test.netflix (director);
